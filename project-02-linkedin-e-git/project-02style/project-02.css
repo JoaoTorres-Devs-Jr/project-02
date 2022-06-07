@@ -1,33 +1,84 @@
 *{
     margin: 0;
     padding: 0;
+    letter-spacing: 1px;
 }
 
 
 body{
+    flex-wrap: wrap;
     width: 100vw;
-    background: rgb(160, 211, 194);
+    min-width: 360px;
     align-items: center;
     text-align: center;
 }
 
-.div-mensagem {
-    background-color: rgb(43, 190, 141);
-    margin-top: 100px;
+.cabecalho {
+    display: flex;
+    width: 100vw;
+}
+
+.barra-nav {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    min-height: 45px;
+}
+
+.logo-mtj { 
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 360px;
+    align-items: center;
+}
+
+#mtj-logo {
+   border-radius: 50px;
+}
+.barranav-content {
+    margin:5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 360px;    
+}
+
+.barranav-content> a {
+    padding: 8px;
+    text-decoration: none;
+    color: white;
+}
+
+.barranav-content> a:hover {
+    background:  rgb(43, 190, 141);
+    border-radius: 10px;
+    color: black;
+}
+
+/*inicio  da estilização a div perfil*/
+.div-perfil {
+    background: linear-gradient(180deg,  rgb(43, 190, 141) 50% , rgba(154, 156, 156, 0.123)50%);
     width: 100%;
+    min-height: 350px;
 }
 
 #img-perfil-sd {
-    padding: 15px;
-    border-radius: 180px;
-}
-#h1-mensagem {
-    padding: 30px;
+    border-radius: 50%;
+    margin-top: 80px;
+    padding-bottom: auto;
 }
 
 #p-mensagem {
-    padding: 10px;
-    font-size: 20px;
-    font-weight: 600;;
-    word-spacing: 3px;
+    width: 450px;
+    height: 45px;
+    padding: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    margin: auto auto;
+    
 }
